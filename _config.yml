@@ -16,11 +16,11 @@ minimal_mistakes_skin    : "dark" #"default", "air", "aqua", "contrast", "dark",
 
 # Site Settings
 locale                   : "en-US"
-title                    : "thehackerish Blog"
+title                    : "Bünyamin Hacking Blog"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "thehackerish Blog"
-description              : "An amazing ethical hacking website."
+name                     : "Bünyamin Hacking Blog"
+description              : "My Hacking Journey."
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -104,10 +104,10 @@ analytics:
 
 # Site Author
 author:
-  name             : "Abdessamad Dhassi"
+  name             : "Bünyamin Cetinkaya"
   avatar           : "/assets/images/author.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "localhost"
+  bio              : "Trying my best to be the better version of myself."
+  location         : "Belgium"
   email            :
   links:
     - label: "Email"
