@@ -1,18 +1,18 @@
 # Burp Suite Certified Practitioner Exam Preparation Walkthrough
 
-
 ---
 toc: true
 toc_label: "Table of Contents"
 toc_icon: "cog"
 toc_sticky: true
-title: Burp Suite Certified Practitioner Exam Prep ! 
-header: Burp Suite Certified Practitioner Exam Preparation Walkthrough
+title: Welcome to my new write-up!
+header:
   image: /assets/images/post1/image.png
   teaser: /assets/images/post1/teaser.png
 
 excerpt: "A unique line of text to describe this post that will display in an archive listing and meta description with SEO benefits."
 ---
+
 
 ### **EXAM PREP**
 
