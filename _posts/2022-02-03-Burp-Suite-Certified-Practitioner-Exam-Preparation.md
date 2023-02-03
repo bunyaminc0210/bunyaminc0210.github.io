@@ -86,7 +86,7 @@ sqlmap -u "[https://0a5800ae0314d4b3c09c3b3500dd000f.web-security-academy.net/fi
 
 Now time to visit admin-panel and see what’s the next bug ! 
 
-### **3/3 DESERIALIZATION:**
+### **3/3 DESERIALIZATION**
 
 Using Burp Scanner we can see that admin_pref are vulnerable :
 
