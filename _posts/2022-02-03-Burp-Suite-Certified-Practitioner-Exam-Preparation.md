@@ -1,5 +1,3 @@
-# Burp Suite Certified Practitioner Exam Preparation Walkthrough
-
 ---
 toc: true
 toc_label: "Table of Contents"
@@ -9,7 +7,6 @@ title: Burp Suite Exam Prep !
 header:
   image: /assets/images/burp/burp_header.jpeg
   teaser: /assets/images/burp/burp_teaser.png
-  
   
 ---
 
