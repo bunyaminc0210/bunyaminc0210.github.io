@@ -13,7 +13,7 @@ header:
 
 ### **EXAM PREP**
 
-**1/3: XSS**
+### **1/3: XSS**
 
 DOM XSS in lookup function :
 
@@ -66,7 +66,7 @@ location='https://0a5800ae0314d4b3c09c3b3500dd000f.web-security-academy.net/?Sea
 
 We just have to replace the session cookie to have access to Carlos account. 
 
-**2/3 SQL Injection**
+### **2/3 SQL Injection**
 
 We have access to a new feature : 
 
@@ -86,7 +86,7 @@ sqlmap -u "[https://0a5800ae0314d4b3c09c3b3500dd000f.web-security-academy.net/fi
 
 Now time to visit admin-panel and see what’s the next bug ! 
 
-**3/3** ****DESERIALIZATION:****
+### **3/3** ****DESERIALIZATION:****
 
 Using Burp Scanner we can see that admin_pref are vulnerable :
 
