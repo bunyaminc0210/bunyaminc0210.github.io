@@ -10,6 +10,7 @@ header:
   image: /assets/images/post1/image.png
   teaser: /assets/images/post1/teaser.png
   
+excerpt: "A unique line of text to describe this post that will display in an archive listing and meta description with SEO benefits."  
 ---
 
 
