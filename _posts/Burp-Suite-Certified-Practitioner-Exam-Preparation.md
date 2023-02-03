@@ -1,6 +1,6 @@
 # Burp Suite Certified Practitioner Exam Preparation Walkthrough
 
-```
+
 ---
 toc: true
 toc_label: "Table of Contents"
@@ -13,7 +13,6 @@ header: Burp Suite Certified Practitioner Exam Preparation Walkthrough
 
 excerpt: "A unique line of text to describe this post that will display in an archive listing and meta description with SEO benefits."
 ---
-```
 
 ### **EXAM PREP**
 
