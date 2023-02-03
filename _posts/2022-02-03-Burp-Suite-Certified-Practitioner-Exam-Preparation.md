@@ -24,7 +24,7 @@ I use the “Untrusted types” on Chrome.
 
 I put something in search and click on “search”
 
-![untrusted.png](Burp%20Suite%20Certified%20Practitioner%20Exam%20Preparation%20e44ac319b9a043ea9b3e732055d7c4f5/untrusted.png)
+![untrusted.png](/assets/images/burp/untrusted.png)
 
 By referring to DOM XSS labs on Portswigger, we see that there are 2 DOM XSS payloads who can work here : 
 
