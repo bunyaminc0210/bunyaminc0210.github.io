@@ -3,7 +3,7 @@ toc: true
 toc_label: "Table of Contents"
 toc_icon: "cog"
 toc_sticky: true
-title: Burp Suite Exam Prep !
+title: Burp Suite Exam Preparation Writeup
 header:
   image: /assets/images/burp/burp_header.jpeg
   teaser: /assets/images/burp/burp_teaser.png
@@ -11,7 +11,7 @@ header:
 ---
 
 
-### **EXAM PREP**
+### **EXAM PREPARATION LAB**
 
 ### **1/3: XSS**
 
