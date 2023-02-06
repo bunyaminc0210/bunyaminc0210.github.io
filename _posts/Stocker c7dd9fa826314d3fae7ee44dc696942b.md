@@ -2,7 +2,7 @@ Today I’ll talk you about Stocker machine that I pwned on HackTheBox.
 
 We’ll begin naturally with a little enumeration, for this I used nmap : 
 
-![stocker-nmap-results.png](Stocker%20c7dd9fa826314d3fae7ee44dc696942b/stocker-nmap-results.png)
+![stocker-nmap-results.png](/assets/images/stocker/stocker-nmap-results.png)
 
 Here we can see that we have 2 ports open : 22 (SSH) and 80 (HTTP)
 
@@ -10,7 +10,7 @@ Don’t forget to add “stocker.htb” in /etc/hosts file !
 
 Now we’ll FUZZ for new vhosts : 
 
-![stocker-subdomain-enumeration.png](Stocker%20c7dd9fa826314d3fae7ee44dc696942b/stocker-subdomain-enumeration.png)
+![stocker-subdomain-enumeration.png](/assets/images/stocker/stocker-subdomain-enumeration.png)
 
 we can see that there’s a new vhost ⇒ **dev.stocker.htb**
 
@@ -21,19 +21,19 @@ I looked for maybe a bypass of login and I found something there :
 
 I tried the payload below in the POST request when logging: 
 
-![Stocker-NOSQL-login-bypass.png](Stocker%20c7dd9fa826314d3fae7ee44dc696942b/Stocker-NOSQL-login-bypass.png)
+![Stocker-NOSQL-login-bypass.png](/assets/images/stocker/Stocker-NOSQL-login-bypass.png)
 
 After logged in we can see that there is an e-commerce website that can generates purchase receipt, this feature works with an API call to /api/order : 
 
-![Stocker-receipt-generation.png](Stocker%20c7dd9fa826314d3fae7ee44dc696942b/Stocker-receipt-generation.png)
+![Stocker-receipt-generation.png](/assets/images/stocker/Stocker-receipt-generation.png)
 
 here’s the response : 
 
-![Stocker-Receipt-generation-response.png](Stocker%20c7dd9fa826314d3fae7ee44dc696942b/Stocker-Receipt-generation-response.png)
+![Stocker-Receipt-generation-response.png](/assets/images/stocker/Stocker-Receipt-generation-response.png)
 
 now we just have to visit ⇒ /api/po/{orderID}
 
-![stocker-passwd-file.png](Stocker%20c7dd9fa826314d3fae7ee44dc696942b/stocker-passwd-file.png)
+![stocker-passwd-file.png](/assets/images/stocker/stocker-passwd-file.png)
 
 Here we can see the users on the machine, it’s something good but not enough to progress. After some time I found that we can have access to an interesting file just by changing the payload above (in red) by : 
 
@@ -43,7 +43,7 @@ Here we can see the users on the machine, it’s something good but not enough t
 
 It’s like the webserver works with nodeJS and there’s some intersting infos : 
 
-![stocker-angoose-password.png](Stocker%20c7dd9fa826314d3fae7ee44dc696942b/stocker-angoose-password.png)
+![stocker-angoose-password.png](/assets/images/stocker/stocker-angoose-password.png)
 
 Trying to SSH Angoose account with the password above and it worked like a charm! 
 
