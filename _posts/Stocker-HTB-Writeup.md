@@ -1,3 +1,15 @@
+---
+toc: true
+toc_label: "Table of Contents"
+toc_icon: "cog"
+toc_sticky: true
+title: Burp Suite Exam Prep !
+header:
+  image: /assets/images/stocker/stocker_header.png
+  teaser: /assets/images/stocker/stocker_header.png
+  
+---
+
 Today I’ll talk you about Stocker machine that I pwned on HackTheBox. 
 
 We’ll begin naturally with a little enumeration, for this I used nmap : 
