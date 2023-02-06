@@ -3,7 +3,7 @@ toc: true
 toc_label: "Table of Contents"
 toc_icon: "cog"
 toc_sticky: true
-title: Burp Suite Exam Prep !
+title: Stocker HTB Writeup
 header:
   image: /assets/images/stocker/stocker_header.png
   teaser: /assets/images/stocker/stocker_header.png
