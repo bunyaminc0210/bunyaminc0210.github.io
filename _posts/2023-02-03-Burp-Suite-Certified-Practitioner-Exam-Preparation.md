@@ -11,7 +11,7 @@ header:
 ---
 
 
-### **EXAM PREPARATION LAB**
+### **I want to share my experience with Burp Suite Certified Practitioner Exam**
 
 ### **1/3: XSS**
 
