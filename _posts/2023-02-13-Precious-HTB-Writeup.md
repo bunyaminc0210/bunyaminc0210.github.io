@@ -2,7 +2,7 @@
 
 Description
 
-The machine we’ll talk about today is a machine vulnerable to RCE and also to YAML Deserialization attack, I’ll explain my best to go through these 2 vulnerabilities.
+The machine we’ll talk about today is a machine vulnerable to RCE and also to YAML Deserialization attack, I’ll explain my best to do through these 2 vulnerabilities.
 
 # **PORT SCANNING**
 
