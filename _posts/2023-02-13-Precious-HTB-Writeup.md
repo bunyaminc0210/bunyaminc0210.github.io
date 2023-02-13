@@ -1,5 +1,14 @@
-
-
+---
+toc: true
+toc_label: "Table of Contents"
+toc_icon: "cog"
+toc_sticky: true
+title: Precious HTB Writeup
+header:
+  image: /assets/images/stocker/precious_header.png
+  teaser: /assets/images/stocker/precious_header.png
+  
+---
 **Description**
 
 The machine we’ll talk about today is a machine vulnerable to RCE and also to YAML Deserialization attack, I’ll explain my best to do through these 2 vulnerabilities.
