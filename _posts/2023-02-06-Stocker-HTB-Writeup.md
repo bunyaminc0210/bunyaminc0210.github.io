@@ -5,7 +5,7 @@ toc_icon: "cog"
 toc_sticky: true
 title: Stocker HTB Writeup
 header:
-  image: /assets/images/stocker/stocker_header.png
+  image: /assets/images/stocker/stocker_header1.png
   teaser: /assets/images/stocker/stocker_header.png
   
 ---
