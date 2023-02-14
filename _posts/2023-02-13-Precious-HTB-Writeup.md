@@ -5,7 +5,7 @@ toc_icon: "cog"
 toc_sticky: true
 title: Precious HTB Writeup
 header:
-  image: /assets/images/precious/precious_header1.png
+  image: /assets/images/precious/precious_header2.png
   teaser: /assets/images/precious/precious_header.png
   
 ---
