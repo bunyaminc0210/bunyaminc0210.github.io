@@ -11,7 +11,7 @@ header:
 ---
 **Description**
 
-Today, I want to talk about a platform that helped me and continue to help to grow as a Hacker. When I was struggling at Bug Bounty Hunting when I was reading a lot of articles on Medium, Tweets on Twitter, I saw a new platform was created by Zseano (if you don't know him yet, go follow him on [Twitter] (https://twitter.com/@zseano) ). 
+Today, I want to talk about a platform that helped me and continue to help to grow as a Hacker. When I was struggling at Bug Bounty Hunting when I was reading a lot of articles on Medium, Tweets on Twitter, I saw a new platform was created by Zseano (if you don't know him yet, go follow him on [Twitter](https://twitter.com/@zseano) ). 
 
 
 I also invite you to go visit [Bug Bug Hunuter](https://bugbountyhunter.com) :
