@@ -1,5 +1,18 @@
+---
+toc: true
+toc_label: "Table of Contents"
+toc_icon: "cog"
+toc_sticky: true
+title: Bug Bounty Hunter Platform - Funny bug writeup
+header:
+  image: /assets/images/bugbountyhunter/bbh_header.png
+  teaser: /assets/images/bugbountyhunter/bbh_header.png
+  
+---
+**Description**
 
 Today, I want to talk about a platform that helped me and continue to help to grow as a Hacker. When I was struggling at Bug Bounty Hunting when I was reading a lot of articles on Medium, Tweets on Twitter, I saw a new platform was created by Zseano (if you don't know him yet, go follow him on Twitter https://twitter.com/zseano). 
+
 
 I also invite you to go visit https://bugbountyhunter.com :
 
