@@ -16,7 +16,7 @@ Today, I want to talk about a platform that helped me and continue to help to gr
 
 I also invite you to go visit https://bugbountyhunter.com :
 
-![[bugbountyhunter.png](/assets/images/bugbountyhunter/bugbountyhunter.png)
+![bugbountyhunter.png](/assets/images/bugbountyhunter/bugbountyhunter.png)
 
 OK now that I introduced the website, I'll share with you a bug I found on the platform.
 
@@ -32,15 +32,15 @@ The bug I found was discovered on a particular subdomain, https://kreative.barke
 
 
 
-![[kreative-login-page.png](/assets/images/bugbountyhunter/kreative-login-page.png)
+![kreative-login-page.png](/assets/images/bugbountyhunter/kreative-login-page.png)
 
 we'll try to "Create new account" and see what happens => username:test, password:test  
 
-![[kreative-create-account.png](/assets/images/bugbountyhunter/kreative-create-account.png)
+![kreative-create-account.png](/assets/images/bugbountyhunter/kreative-create-account.png)
 
 After clicking on "Create Account", i'm redirected to the Home page. I directly try to login : 
 
-![[kreative-login-approval.png](/assets/images/bugbountyhunter/kreative-login-approval.png)
+![kreative-login-approval.png](/assets/images/bugbountyhunter/kreative-login-approval.png)
 
 OK then, not possible to login, we maybe have to wait for an admin to approve our account but let's see the requests done on the background with Burp Suite : 
 
@@ -61,17 +61,17 @@ The response below gives us a hint on what we can try now :
 
 gives : 
 
-`{`
-  ` success: 1,`
-   `pendingApproval: false,`
-  ` autoApproval: true,`
-`}`
+{
+   success: 1,
+   pendingApproval: false,
+   autoApproval: true,
+}
 
 
 BINGO ! We found a bypass, we can now try to login and see if it really worked : 
 
 
-![[kreative-logged-in.png](/assets/images/bugbountyhunter/kreative-logged-in.png)
+![kreative-logged-in.png](/assets/images/bugbountyhunter/kreative-logged-in.png)
 
 
 That's it ! 
