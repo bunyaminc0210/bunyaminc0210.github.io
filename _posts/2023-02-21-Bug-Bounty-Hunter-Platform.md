@@ -50,7 +50,7 @@ There is an interesting request to API endpoint :
 
 When you see this type of request, try to change the version and see if a previous version is still availabe : 
 
-![[burp-request-api-version.png](/assets/images/bugbountyhunter/burp-request-api-version.png)
+![burp-request-api-version.png](/assets/images/bugbountyhunter/burp-request-api-version.png)
 
 The response below gives us a hint on what we can try now : 
 
