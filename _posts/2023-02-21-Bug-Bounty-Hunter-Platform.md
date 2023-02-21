@@ -6,7 +6,7 @@ toc_sticky: true
 title: Bug Bounty Hunter Platform - Funny bug writeup
 header:
   image: /assets/images/bugbountyhunter/bbh_header.png
-  teaser: /assets/images/bugbountyhunter/bbh_header.png
+  teaser: /assets/images/bugbountyhunter/bbh_teaser.png
   
 ---
 **Description**
