@@ -104,9 +104,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "Bünyamin Cetinkaya"
-  avatar           : "/assets/images/author.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Trying my best to be the better version of myself."
+  name             : "Bünyamin"
+  avatar           : "/assets/images/author.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "Coffee Lover☕"
   location         : ""
   email            :
   links:
