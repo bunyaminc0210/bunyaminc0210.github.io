@@ -3,7 +3,7 @@ toc: true
 toc_label: "Table of Contents"
 toc_icon: "search"
 toc_sticky: true
-title: "Bug Bounty Recon Methodology — From A to Z"
+title: "Bug Bounty Recon Methodology: From A to Z"
 header:
   image: /assets/images/recon-a-z/recon_header.png
   teaser: /assets/images/recon-a-z/recon_teaser.png
