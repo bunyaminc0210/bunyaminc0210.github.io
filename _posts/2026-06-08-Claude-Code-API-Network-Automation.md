@@ -3,7 +3,7 @@ toc: true
 toc_label: "Table of Contents"
 toc_icon: "terminal"
 toc_sticky: true
-title: "Claude Code — From API Setup to Cisco Network Automation"
+title: "Claude Code : From API Setup to Cisco Network Automation"
 header:
   image: /assets/images/claude-network/claude_network_header.png
   teaser: /assets/images/claude-network/claude_network_teaser.png
