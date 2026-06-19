@@ -3,7 +3,7 @@ toc: true
 toc_label: "Table of Contents"
 toc_icon: "cog"
 toc_sticky: true
-title: "Setting Up an Asterisk PBX for the Corleone Family — VoIP, SIP, and a Touch of Sicily"
+title: "Setting Up an Asterisk PBX for the Corleone Family VoIP, SIP, and a Touch of Sicily"
 header:
   image: /assets/images/asterisk-corleone/asterisk_header.png
   teaser: /assets/images/asterisk-corleone/asterisk_teaser.png
